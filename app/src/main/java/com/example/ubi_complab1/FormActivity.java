@@ -23,6 +23,11 @@ public class FormActivity extends AppCompatActivity {
 
         submitButton.setOnClickListener(v -> {
 
+            String name = nameInput.getText().toString();
+            String password = passwordInput.getText().toString();
+            String phone = phoneInput.getText().toString();
+            String email = emailInput.getText().toString();
+
         });
     }
 
