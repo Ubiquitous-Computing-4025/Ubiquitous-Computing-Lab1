@@ -25,4 +25,11 @@
         android:hint="Telephone"
         android:inputType="phone"/>
 
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"/>
+
 </LinearLayout>
