@@ -18,4 +18,11 @@
         android:hint="Password"
         android:inputType="textPassword"/>
 
+    <EditText
+        android:id="@+id/phoneInput"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Telephone"
+        android:inputType="phone"/>
+
 </LinearLayout>
