@@ -19,9 +19,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+
         Button countButton = findViewById(R.id.countButton);
         TextView countText = findViewById(R.id.countText);
         
+        final int[] count = {0};
+        countButton.setOnClickListener(v -> {
+
+        });
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
