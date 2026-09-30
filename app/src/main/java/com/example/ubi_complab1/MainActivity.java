@@ -22,9 +22,11 @@ public class MainActivity extends AppCompatActivity {
 
         Button countButton = findViewById(R.id.countButton);
         TextView countText = findViewById(R.id.countText);
-        
+
         final int[] count = {0};
         countButton.setOnClickListener(v -> {
+            count[0]++;
+            countText.setText("Count: " + count[0]);
 
         });
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
