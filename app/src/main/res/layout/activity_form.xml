@@ -11,4 +11,11 @@
         android:hint="Name"
         android:inputType="textPersonName"/>
 
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+
 </LinearLayout>
