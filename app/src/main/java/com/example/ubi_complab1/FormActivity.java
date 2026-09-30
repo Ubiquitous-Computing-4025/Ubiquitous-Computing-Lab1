@@ -3,6 +3,7 @@ package com.example.ubi_complab1;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -48,6 +49,11 @@ public class FormActivity extends AppCompatActivity {
                 emailInput.setError("Enter a valid email address");
                 return;
             }
+
+            Toast.makeText(
+                    FormActivity.this,
+                    "Thank you " + name + ", your request is being processed",
+                    Toast.LENGTH_SHORT).show();
         });
     }
 
