@@ -20,6 +20,12 @@ public class FormActivity extends AppCompatActivity {
         EditText emailInput = findViewById(R.id.emailInput);
 
         Button submitButton = findViewById(R.id.submitButton);
+
+        submitButton.setOnClickListener(v -> {
+
+        });
     }
+
+
 
 }
