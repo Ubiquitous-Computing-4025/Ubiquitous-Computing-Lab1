@@ -37,6 +37,17 @@ public class FormActivity extends AppCompatActivity {
                 phoneInput.setError("Telephone number must contain digits only");
                 return;
             }
+
+            if (password.isEmpty()) {
+                passwordInput.setError("Password is required");
+                return;
+            }
+
+            //From Stack Overflow
+            if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                emailInput.setError("Enter a valid email address");
+                return;
+            }
         });
     }
 
