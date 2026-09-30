@@ -28,6 +28,15 @@ public class FormActivity extends AppCompatActivity {
             String phone = phoneInput.getText().toString();
             String email = emailInput.getText().toString();
 
+            if (!name.matches("[a-zA-Z ]+")) { //Validation checks
+                nameInput.setError("Name must contain letters only");
+                return;
+            }
+
+            if (!phone.matches("[0-9]+")) {
+                phoneInput.setError("Telephone number must contain digits only");
+                return;
+            }
         });
     }
 
