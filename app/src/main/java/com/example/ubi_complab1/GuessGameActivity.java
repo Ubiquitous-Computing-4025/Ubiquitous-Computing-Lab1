@@ -41,13 +41,23 @@ public class GuessGameActivity extends AppCompatActivity {
             guessCount[0]++; //counter
             guessCountText.setText("Guesses: " + guessCount[0]);
 
-            if (guess < secretNumber[0]) { 
+            if (guess < secretNumber[0]) {
                 resultText.setText("Too low");
             } else if (guess > secretNumber[0]) {
                 resultText.setText("Too high");
             } else {
                 resultText.setText("Correct!");
             }
+        });
+
+        playAgainButton.setOnClickListener(v -> {
+
+            secretNumber[0] = (int) (Math.random() * 30) + 1;
+            guessCount[0] = 0;
+
+            guessCountText.setText("Guesses: 0");
+            resultText.setText("");
+            guessInput.setText("");
         });
 
 
