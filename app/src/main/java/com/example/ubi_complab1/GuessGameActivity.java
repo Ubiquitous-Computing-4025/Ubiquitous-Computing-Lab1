@@ -31,6 +31,23 @@ public class GuessGameActivity extends AppCompatActivity {
 
             String guessText = guessInput.getText().toString();
 
+            //Validation
+            if (guessText.isEmpty()) {
+                guessInput.setError("Enter a number");
+                return;
+            }
+            int guess = Integer.parseInt(guessText);
+
+            guessCount[0]++; //counter
+            guessCountText.setText("Guesses: " + guessCount[0]);
+
+            if (guess < secretNumber[0]) { 
+                resultText.setText("Too low");
+            } else if (guess > secretNumber[0]) {
+                resultText.setText("Too high");
+            } else {
+                resultText.setText("Correct!");
+            }
         });
 
 
