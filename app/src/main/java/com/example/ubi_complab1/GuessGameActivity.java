@@ -27,6 +27,12 @@ public class GuessGameActivity extends AppCompatActivity {
         final int[] secretNumber = {(int) (Math.random() * 30) + 1};
         final int[] guessCount = {0};
 
+        guessButton.setOnClickListener(v -> {
+
+            String guessText = guessInput.getText().toString();
+
+        });
+
 
     }
 }
