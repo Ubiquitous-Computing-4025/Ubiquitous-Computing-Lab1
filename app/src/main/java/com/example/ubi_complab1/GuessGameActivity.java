@@ -13,6 +13,6 @@ public class GuessGameActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_guess_game);
 
-        EditText
+
     }
 }
