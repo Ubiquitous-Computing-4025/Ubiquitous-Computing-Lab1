@@ -23,6 +23,10 @@ public class GuessGameActivity extends AppCompatActivity {
         TextView resultText = findViewById(R.id.resultText);
         TextView guessCountText = findViewById(R.id.guessCountText);
 
+        //Random selection of secret number + counter
+        final int[] secretNumber = {(int) (Math.random() * 30) + 1};
+        final int[] guessCount = {0};
+
 
     }
 }
