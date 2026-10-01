@@ -1,7 +1,9 @@
 package com.example.ubi_complab1;
 
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,6 +14,14 @@ public class GuessGameActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_guess_game);
+
+        EditText guessInput = findViewById(R.id.guessInput);
+
+        Button guessButton = findViewById(R.id.guessButton);
+        Button playAgainButton = findViewById(R.id.playAgainButton);
+
+        TextView resultText = findViewById(R.id.resultText);
+        TextView guessCountText = findViewById(R.id.guessCountText);
 
 
     }
